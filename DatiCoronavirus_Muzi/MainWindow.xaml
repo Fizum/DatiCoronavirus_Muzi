@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DatiCoronavirus_Muzi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="625.8" Width="660.8">
+    <Grid Margin="-6,0,-0.6,1">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF4FFF00"/>
+                <GradientStop Color="#FF008DE3" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="651.2"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="Lst_Lista" Height="506" Margin="10,50,10.4,0" VerticalAlignment="Top" FontFamily="Rockwell Nova" FontSize="16"/>
+        <Button x:Name="Btn_Visualizza" Content="Visualizza Lista" HorizontalAlignment="Left" Height="35" Margin="171,10,0,0" VerticalAlignment="Top" Width="224" Click="Btn_Visualizza_Click" FontFamily="Rockwell Nova" FontSize="16"/>
+        <Label Content="Dati Covid-19" HorizontalAlignment="Left" Height="35" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" FontFamily="Rockwell Nova" FontSize="16" Background="#00000000" FontWeight="Bold"/>
+
     </Grid>
 </Window>
